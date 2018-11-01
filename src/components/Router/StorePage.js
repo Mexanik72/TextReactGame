@@ -34,17 +34,17 @@ class StorePage extends Component {
                     {pumpkin !== 0 && (
                         <Item onClick={sellPumpkins}>Продать тыквы</Item>
                     )}
-                    {money > 1 && (
+                    {money > 0 && (
                         <Item onClick={buySeed} amount={1}>
                             Купить 1 семечко
                         </Item>
                     )}
-                    {money > 3 && (
+                    {money > 2 && (
                         <Item onClick={buySeed} amount={3}>
                             Купить 3 семечка
                         </Item>
                     )}
-                    {money > 5 && (
+                    {money > 4 && (
                         <Item onClick={buyBoost} amount={1}>
                             Купить ускоритель
                         </Item>
